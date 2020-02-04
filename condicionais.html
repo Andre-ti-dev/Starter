@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <script>
+        // Condicionais
+        function retornaSexo(sexo) {
+            // M, F
+            // Masculino, Feminino
+
+            // If, else if, else   
+            /*
+            if (sexo === 'M') {
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return 'Feminino'
+            } else {
+                return 'Outro';
+            }
+            */
+
+            // Switch
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                    break;
+                case 'F':
+                    return 'Feminino';
+                    break;
+                default:
+                    return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexo('M');
+        console.log(resultado);
+    </script>
+</body>
+
+</html>
