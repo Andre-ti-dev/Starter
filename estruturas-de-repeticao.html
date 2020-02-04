@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <script>
+        // for, while
+
+        // for, utilizado quando você sabe quantas vezes o laço deve se repetir
+        for (let i = 0; i < 100; i++) {
+            console.log(i);
+        }
+
+        let j = 32342595;
+        /* while, utilizado quando o loop deve ser executado enquanto 
+        uma condição mais complexa for verdadeira */
+        while (j > 50) {
+            console.log(j);
+            j /= 5;
+        }
+
+        /* do while, utilizado quando o loop deve rodar ao menos uma vez independente
+        da condição, pois ela é verificada depois de executar a primeira iteração */
+        let teste = false;
+        do {
+            console.log('Teste: ', teste);
+        } while (teste);
+    </script>
+</body>
+
+</html>
