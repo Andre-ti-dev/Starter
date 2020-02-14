@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input id="nome" />
+    </div>
+
+    <script>
+        // Podemos manipular, assim como criar e remover elementos através do Javascript
+
+        // Criando elemento "a" (link)
+        let linkElement = document.createElement('a');
+
+        // Adicionando atributos
+        linkElement.setAttribute('href', 'http://rocketseat.com.br');
+        linkElement.setAttribute('title', 'Acessar Rocketseat');
+
+        // Criando conteúdo de texto para o link
+        let textElement = document.createTextNode('Acessar Rocketseat');
+
+        // Inserindo o texto no link
+        linkElement.appendChild(textElement);
+
+        // Adicionando o link na página dentro da div com id "app"
+        let app = document.querySelector('#app');
+        app.appendChild(linkElement);
+
+        let inputElement = document.querySelector('#nome');
+
+        // Removendo elemento
+        app.removeChild(inputElement);
+    </script>
+</body>
+
+</html>
