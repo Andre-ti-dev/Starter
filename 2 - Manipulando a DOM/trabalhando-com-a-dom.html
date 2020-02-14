@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" />
+        <button class="botao">Exibir</button>
+    </div>
+
+    <script>
+        // Trabalhando com a DOM
+        // Podemos manipular elementos html com o Javascript acessando os elementos 
+        // pelo seu id, name, class entre outros através do objeto document e utilizando
+        // seus métodos (getElementById, getElementsByClassName...)
+        // Alguns retornam um elemento especifico e outros um array de elementos
+
+        let inputElement = document.getElementById('nome');
+        console.log(inputElement);
+
+        // Outra maneira é através do metodo querySelector (um elemento) e querySelectorAll (Array de elementos)
+        // Esses métodos permitem que usemos seletores css para buscar elementos na DOM
+
+        // Pesquisa por id
+        let app = document.querySelector('#app');
+        console.log(app);
+
+        // Busca por atributo
+        let btnElement = document.querySelector('button[class=botao]');
+        console.log(btnElement);
+
+        // Adicionando eventos com Javascript
+        btnElement.onclick = function () {
+            let text = inputElement.value;
+            alert(text);
+        }
+
+    </script>
+</body>
+
+</html>
