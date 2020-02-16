@@ -16,7 +16,7 @@ function renderTodos() {
     let pos = todos.indexOf(todo);
     linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
 
-    let linkText = document.createTextNode('Excluir');
+    let linkText = document.createTextNode('X');
     linkElement.appendChild(linkText);
 
     todoElement.appendChild(todoText);

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+div#app {
+  width: 50%;
+  margin: 30px auto;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px #c5c5c5;
+}
+
+div#app ul {
+  list-style: none;
+}
+
+div#app ul li {
+  padding: 5px 26px 5px 5px;
+  position: relative;
+}
+
+div#app ul li a {
+  position: absolute;
+  right: 3px;
+  text-decoration: none;
+  background: #d26060;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+div#app div#controls {
+  margin-top: 30px;
+}
+
+div#app input {
+  padding: 6px;
+}
+
+div#app button {
+  background: #5f5fc1;
+  border: 0;
+  padding: 8px;
+  color: #fff;
+}
