@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Javascript 5 - Modulo 1</title>
+</head>
+
+<body>
+    <script>
+        function exibeUsuarios(usuarios) {
+            for (let usuario of usuarios) {
+                let habilidades = usuario.habilidades.join(', ');
+                let nome = usuario.nome;
+                console.log(`O ${nome} possui as habilidades: ${habilidades}`);
+            }
+        }
+
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        exibeUsuarios(usuarios);
+    </script>
+</body>
+
+</html>
