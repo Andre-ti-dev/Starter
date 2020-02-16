@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Javascript 3 - Modulo 4</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul></ul>
+        <input type="text">
+        <button>Pesquisar</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let listElement = document.querySelector('#app ul');
+        let inputElement = document.querySelector('#app input');
+        let btnElement = document.querySelector('#app button');
+
+        btnElement.onclick = function () {
+            listElement.innerHTML = '';
+            if (inputElement.value.length > 0) {
+                let loadingListItem = document.createElement('li');
+                loadingListItem.innerHTML = 'Carregando...';
+                listElement.appendChild(loadingListItem);
+                axios
+                    .get('https://api.github.com/users/' + inputElement.value + '/repos')
+                    .then(function (response) {
+                        renderRepositories(response.data);
+                    })
+                    .catch(function (error) {
+                        loadingListItem.innerHTML = 'Erro, usuário não encontrado';
+                    });
+            } else {
+                alert('Informe um usuário do github');
+            }
+        }
+
+        function renderRepositories(repositories) {
+            listElement.innerHTML = '';
+            for (let repository of repositories) {
+                let listItem = document.createElement('li');
+                let repositoryLink = document.createElement('a');
+                let repositoryName = document.createTextNode(repository.name);
+
+                repositoryLink.setAttribute('href', repository.html_url);
+                repositoryLink.appendChild(repositoryName);
+                listItem.appendChild(repositoryLink);
+                listElement.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 // Promise para receber os dados da api do github
 // A promise é usada quando é preciso aguardar que um valor esteja disponível
 // No caso é usado para aguardar a requisição ser feita na api do github
+
 let minhaPromise = function() {
   return new Promise(function(resolve, reject) {
     let xhr = new XMLHttpRequest();
