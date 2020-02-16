@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Javascript 1 - Modulo 2</title>
+</head>
+
+<body>
+    <div id="app">
+        <div style="text-align: center;">
+            <button id="btn">CRIAR NOVO ELEMENTO</button>
+        </div>
+    </div>
+    <script>
+        let btn = document.querySelector('#btn');
+        let app = document.querySelector('#app');
+
+        btn.onclick = function () {
+            let box = document.createElement('div');
+            box.style.display = 'inline-block';
+            box.style.width = '100px';
+            box.style.height = '100px';
+            box.style.margin = '1px 2px';
+            box.style.backgroundColor = '#f00';
+
+            app.appendChild(box);
+        }
+    </script>
+</body>
+
+</html>

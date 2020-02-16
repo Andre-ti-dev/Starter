@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Javascript 3 - Modulo 2</title>
+</head>
+
+<body>
+    <ul id="usuarios"></ul>
+    <script>
+        let listaUsuarios = document.querySelector('#usuarios');
+        let nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (let nome of nomes) {
+            let li = document.createElement('li');
+            let texto = document.createTextNode(nome);
+
+            li.appendChild(texto);
+            listaUsuarios.appendChild(li);
+        }
+    </script>
+</body>
+
+</html>

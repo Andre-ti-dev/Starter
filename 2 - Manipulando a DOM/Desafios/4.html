@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Javascript 4 - Modulo 2</title>
+</head>
+
+<body>
+    <ul id="usuarios"></ul>
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    <script>
+        let listaUsuarios = document.querySelector('#usuarios');
+        let nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (let nome of nomes) {
+
+            listaUsuarios.appendChild(montarLi(nome));
+        }
+
+        function adicionar() {
+            let nomeInput = document.querySelector('input[name=nome]');
+            if (nomeInput.value != '') {
+                listaUsuarios.appendChild(montarLi(nomeInput.value));
+                nomeInput.value = '';
+            } else {
+                alert('Informe um nome');
+            }
+        }
+
+        function montarLi(nome) {
+            let li = document.createElement('li');
+            let texto = document.createTextNode(nome);
+            li.appendChild(texto);
+
+            return li;
+        }
+    </script>
+</body>
+
+</html>
