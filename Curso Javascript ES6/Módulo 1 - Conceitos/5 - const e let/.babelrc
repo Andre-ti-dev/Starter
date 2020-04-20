@@ -1,0 +1,9 @@
+/* 
+O babel preset-env vai entender qual o ambiente (Browser, Node, React Native)
+estamos desenvolvendo e converter nosso código es6 em um código js que o 
+ambiente entenda. 
+*/
+
+{
+  "presets": ["@babel/preset-env"]
+}

@@ -1,0 +1,9 @@
+# Instação node e yarn
+
+Node:
+    ✔ Visitar https://nodejs.org/en/download/ @done(20-03-03 19:17)
+    ✔ Baixar a versão para seu sistema operacional @done(20-03-03 19:17)
+    ✔ Rodar node -v e verificar a versão @done(20-03-03 19:17)
+Yarn:
+    ✔ Visitar https://classic.yarnpkg.com/pt-BR/docs/install/#windows-stable @done(20-03-03 19:17)
+    ✔ Escolher uma opção para instalar @done(20-03-03 19:17)

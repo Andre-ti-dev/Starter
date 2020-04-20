@@ -1,0 +1,13 @@
+Javascript ES6+
+
+ES: EcmaScript
+6: EcmaScript 2015 (6 é a versão e representa o último número do ano de lançamento + 1)
+
+Oque é: Formula as novas regras e atualizações da linguagem Javascript
+essa atualizações incluem novas funcionalidades que serão implementadas 
+pelos navegadores.
+
+Babel: Com o avanço rápido das novas atualizações do Javascript alguns navegadores
+não conseguem implementar todas as novidades rapidamente. Para utilizar funcionalidades 
+que não foram implementadas precisamos utilizar um transpilador que ira converter 
+nosso código es6+ em um código js que sejá entendido por todos navegadores.
